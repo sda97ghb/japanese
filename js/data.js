@@ -644,7 +644,118 @@ const EXERCISES = [
                 "sequence": ["お", "しゃ", "し", "ぶ", "り", "で", "す"],
                 "transcription": ["o", "sha", "shi", "bu", "ri", "de", "su"],
                 "translation": "Long time no see."
-            }
+            },
+            {
+                "sequence": "おねがいします",
+                "transcription": ["o", "ne", "ga", "i", "shi", "ma", "su"],
+                "translation": "Please"
+            },
+            {
+                "sequence": "どうも ありがとう ございます",
+                "transcription": ["do", "u", "mo", " ", "a", "ri", "ga", "to", "u", " ", "go", "za", "i", "ma", "su"],
+                "translation": "Thank you so much"
+            },
+            {
+                "sequence": "すみません",
+                "transcription": ["su", "mi", "ma", "se", "n"],
+                "translation": "Excuse me"
+            },
+            {
+                "sequence": "ごめんなさい",
+                "transcription": ["go", "me", "n", "na", "sa", "i"],
+                "translation": "I’m sorry"
+            },
+            {
+                "sequence": "どういたしまして",
+                "transcription": ["do", "u", "i", "ta", "shi", "ma", "shi", "te"],
+                "translation": "You’re welcome"
+            },
+            {
+                "sequence": "いま いそがしい です か",
+                "suffix": "?",
+                "transcription": ["i", "ma", " ", "i", "so", "ga", "shi", "i", " ", "de", "su", " ", "ka"],
+                "translation": "Are you busy now?"
+            },
+            {
+                "sequence": ["こ", "ん", "しゅ", "う", "ま", "つ", " ", "よ", "て", "い", " ", "が", " ", "あ", "り", "ま", "す", " ", "か"],
+                "suffix": "?",
+                "transcription": ["ko", "n", "shu", "u", "ma", "tsu", " ", "yo", "te", "i", " ", "ga", " ", "a", "ri", "ma", "su", " ", "ka"],
+                "translation": "What are you plans this weekend?"
+            },
+            {
+                "sequence": ["か", "ぞ", "く", " ", "の", " ", "み", "な", "さ", "ん", " ", "わ", " ", "い", "か", "が", " ", "で", "す", " ", "か"],
+                "suffix": "?",
+                "transcription": ["ka", "zo", "ku", " ", "no", " ", "mi", "na", "sa", "n", " ", "wa", " ", "i", "ka", "ga", " ", "de", "su", " ", "ka"],
+                "translation": "How is your family?"
+            },
+            {
+                "sequence": ["じ", "こ", " ", "しょ", "う", "か", "い", " ", "を", " ", "お", "ね", "が", "い", "し", "ま", "す"],
+                "transcription": ["ji", "ko", " ", "sho", "u", "ka", "i", " ", "o", " ", "o", "ne", "ga", "i", "shi", "ma", "su"],
+                "translation": "Tell me about yourself"
+            },
+            {
+                "sequence": "どう おもいます か",
+                "suffix": "?",
+                "transcription": ["do", "u", " ", "o", "mo", "i", "ma", "su", " ", "ka"],
+                "translation": "What do you think?"
+            },
+            {
+                "sequence": "それ わ えいご で なんと いいます か",
+                "suffix": "?",
+                "transcription": ["so", "re", " ", "wa", " ", "e", "i", "go", " ", "de", " ", "na", "n", "to", " ", "i", "i", "ma", "su", " ", "ka"],
+                "translation": "How do you say that in English?"
+            },
+            {
+                "sequence": "わかりません",
+                "transcription": ["wa", "ka", "ri", "ma", "se", "n"],
+                "translation": "I don’t understand."
+            },
+            {
+                "sequence": "わすれました",
+                "transcription": ["wa", "su", "re", "ma", "shi", "ta"],
+                "translation": "I forgot"
+            },
+            {
+                "sequence": "しりません",
+                "transcription": ["shi", "ri", "ma", "se", "n"],
+                "translation": "I don’t know."
+            },
+            {
+                "sequence": ["も", "と", " ", "ゆ", "っく", "り", " ", "は", "ん", "し", "て"],
+                "suffix": "?",
+                "transcription": ["mo", "to", " ", "yu", "kku", "ri", " ", "ha", "n", "shi", "te"],
+                "translation": "Can you please say it slowly?"
+            },
+            {
+                "sequence": "まい にち",
+                "transcription": ["ma", "i", " ", "ni", "chi"],
+                "translation": "Every day"
+            },
+            {
+                "sequence": "じじ",
+                "transcription": ["ji", "ji"],
+                "translation": "Sometimes"
+            },
+            {
+                "sequence": "いま",
+                "transcription": ["i", "ma"],
+                "translation": "Now"
+            },
+            {
+                "sequence": "あとで",
+                "transcription": ["a", "to", "de"],
+                "translation": "Later"
+            },
+            {
+                "sequence": "たぶん",
+                "transcription": ["ta", "bu", "n"],
+                "translation": "Maybe"
+            },
+            // {
+            //     "sequence": [""],
+            //     "transcription": [""],
+            //     "translation": ""
+            // },
         ],
         "alphabet": [
             "a", "i", "u", "e", "o", "ya", "yu", "yo",

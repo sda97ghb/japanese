@@ -155,9 +155,12 @@ class UIPickASequenceExercise {
             beforeCurrent = beforeCurrent.join("");
         }
         beforeCurrent += ` <span style="color: red;">?</span>`;
-        let buttons = this.exercise.currentCharacterTranscriptions.map(transcription => `
-            <div class="d-inline-block px-3 rounded sequence-transcription-variant">${transcription}</div>
-        `).join("");
+        let buttons = this.exercise.currentCharacterTranscriptions
+            .map(transcription => transcription.trim().length === 0 ? "_" : transcription)
+            .map(transcription => `
+                <div class="d-inline-block px-3 rounded sequence-transcription-variant">${transcription}</div>
+            `)
+            .join("");
         return `<span style="margin-right: 1rem;">${beforeCurrent}</span>←${buttons}`
     }
 
@@ -178,7 +181,9 @@ class UIPickASequenceExercise {
     }
 
     onTranscriptionClicked(transcription, transcriptionElement) {
-        if (this.exercise.testTranscription(transcription)) {
+        let isCorrectTranscription = this.exercise.testTranscription(transcription) ||
+            (transcription === "_" && this.exercise.testTranscription(" "));
+        if (isCorrectTranscription) {
             if (this.exercise.hasNextCharacter) {
                 this.exercise.nextCharacter();
                 this.sequenceElement.html(this.sequenceHtml);

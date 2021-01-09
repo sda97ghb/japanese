@@ -47,6 +47,8 @@ class PickASequenceExercise {
         this.alphabet = exercise.alphabet;
         this.suggestCurrentCharacterTranscriptions = exercise.suggestCurrentCharacterTranscriptions;
 
+        this.shuffle();
+
         this.currentSequenceIdx = 0;
         this.currentCharacterIdx = 0;
     }
