@@ -548,8 +548,7 @@ const EXERCISES = [
             {"word": "hyu [çɯ]", "translation": "ひゅ"},
             {"word": "sho [ɕo]", "translation": "しょ"},
             {"word": "ya [ja]", "translation": "や"},
-            {"word": "kyu [kʲɯ]", "translation": "きゅ"
-            }
+            {"word": "kyu [kʲɯ]", "translation": "きゅ"}
         ]
     },
     {
@@ -612,6 +611,59 @@ const EXERCISES = [
         "translationLanguage": "japanese",
         "cards": []
     },
+    {
+        "id": 99999,
+        "name": "DEV",
+        "type": "pick-a-sequence",
+        "sequenceLanguage": "japanese",
+        "transcriptionLanguage": "roman",
+        "translationLanguage": "english",
+        "sequences": [
+            {
+                "sequence": ["こ", "ん", "に", "ち", "は"],
+                "transcription": ["ko", "n", "ni", "chi", "wa"],
+                "translation": "Hello/Good day"
+            },
+            {
+                "sequence": "もしもし",
+                "transcription": ["mo", "shi", "mo", "shi"],
+                "translation": "Hello (on the phone/Skype)"
+            },
+            {
+                "sequence": "おげんきですか",
+                "suffix": "?",
+                "transcription": ["o", "ge", "n", "ki", "de", "su", "ka"],
+                "translation": "How are you?"
+            },
+            {
+                "sequence": "げんきです",
+                "transcription": ["ge", "n", "ki", "de", "su"],
+                "translation": "I’m good."
+            },
+            {
+                "sequence": ["お", "しゃ", "し", "ぶ", "り", "で", "す"],
+                "transcription": ["o", "sha", "shi", "bu", "ri", "de", "su"],
+                "translation": "Long time no see."
+            }
+        ],
+        "alphabet": [
+            "a", "i", "u", "e", "o", "ya", "yu", "yo",
+            "ka", "ki", "ku", "ke", "ko", "kya", "kyu", "kyo",
+            "sa", "shi", "su", "se", "so", "sha", "shu", "sho",
+            "ta", "chi", "tsu", "te", "to", "cha", "chu", "cho",
+            "na", "ni", "nu", "ne", "no", "nya", "nyu", "nyo",
+            "ha", "hi", "fu", "he", "ho", "hya", "hyu", "hyo",
+            "ma", "mi", "mu", "me", "mo", "mya", "myu", "myo",
+            "ra", "ri", "ru", "re", "ro", "rya", "ryu", "ryo",
+            "wa", "wi",       "we", "wo",
+            "ga", "gi", "gu", "ge", "go", "gya", "gyu", "gyo",
+            "za", "ji", "zu", "ze", "zo", "ja", "ju", "jo",
+            "da", "dji", "dzu", "de", "do", "dja", "dju", "djo",
+            "ba", "bi", "bu", "be", "bo", "bya", "byu", "byo",
+            "pa", "pi", "pu", "pe", "po", "pya", "pyu", "pyo"
+        ],
+        "suggestCurrentCharacterTranscriptions": 4
+    },
     // {
     //     "id": 3,
     //     "name": "Katakana → Romanization",
@@ -628,4 +680,33 @@ const EXERCISES = [
     //     "translationLanguage": "japanese",
     //     "cards": []
     // }
+];
+
+const HIRAGANA = [
+    "あ", "い", "う", "え", "お", "や", "ゆ", "よ",
+    "か", "き", "く", "け", "こ", "きゃ", "きゅ", "きょ",
+    "さ", "し", "す", "せ", "そ", "しゃ", "しゅ", "しょ",
+    "た", "ち", "つ", "て", "と", "ちゃ", "ちゅ", "ちょ",
+    "な", "に", "ぬ", "ね", "の", "にゃ", "にゅ", "にょ",
+    "は", "ひ", "ふ", "へ", "ほ", "ひゃ", "ひゅ", "ひょ",
+    "ま", "み", "む", "め", "も", "みゃ", "みゅ", "みょ",
+    "ら", "り", "る", "れ", "ろ", "りゃ", "りゅ", "りょ",
+    "わ", "ゐ",       "ゑ", "を",
+    "が", "ぎ", "ぐ", "げ", "ご", "ぎゃ", "ぎゅ", "ぎょ",
+    "ざ", "じ", "ず", "ぜ", "ぞ", "じゃ", "じゅ", "じょ",
+    "だ", "ぢ", "づ", "で", "ど", "ぢゃ", "ぢゅ", "ぢょ",
+    "ば", "び", "ぶ", "べ", "ぼ", "びゃ", "びゅ", "びょ",
+    "ぱ", "ぴ", "ぷ", "ぺ", "ぽ", "ぴゃ", "ぴゅ", "ぴょ"
+];
+
+const HIRAGANA_TRANSCRIPTION = [
+    "a", "i", "ɯ", "e", "o", "ja", "jɯ", "jo",
+    "ka", "ki", "kɯ", "ke", "ko", "kʲa", "kʲɯ", "kʲo",
+    "sa", "ɕi", "sɯ", "se", "so", "ɕa", "ɕɯ", "ɕo",
+    "ta", "tɕi", "tsɯ", "te", "to", "tɕa", "tɕɯ", "tɕo",
+    "na", "ɲi", "nɯ", "ne", "no", "ɲa", "ɲɯ", "ɲo",
+    "ha/ɰa", "çi", "ɸɯ", "he/e", "ho", "ça", "çɯ", "ço",
+    "ma", "mi", "mɯ", "me", "mo", "mʲa", "mʲɯ", "mʲo",
+    "ɾa", "ɾi", "ɾɯ", "ɾe", "ɾo", "ɾʲa", "ɾʲɯ", "ɾʲo",
+    "ɰa", "i", "e", "o"
 ];
